@@ -14,20 +14,20 @@ app.listen(app.get('port'), function() {
 
 //Mongoose Settings
 //-----------------------------------------
-const {User} = require("./models");
-const mongoose = require("mongoose");
+// const {User} = require("./models");
+// const mongoose = require("mongoose");
 
-console.log("mongoose stuff intialized");
+// console.log("mongoose stuff intialized");
 
-app.use((req, res, next) => {
-  console.log("use for mongoose callback");
-  if (mongoose.connection.readyState) {
-    console.log("if (mongoose.connection.readyState)");
-    next();
-  } else {
-    console.log("else (mongoose.connection.readyState)");
-    require("./mongo")().then(() => next());
-    console.log("else (mongoose.connection.readyState)");
-  }
-//});
+// app.use((req, res, next) => {
+//  console.log("use for mongoose callback");
+//  if (mongoose.connection.readyState) {
+//    console.log("if (mongoose.connection.readyState)");
+//    next();
+//  } else {
+//    console.log("else (mongoose.connection.readyState)");
+//    require("./mongo")().then(() => next());
+//    console.log("else (mongoose.connection.readyState)");
+//  }
+//});*//
 
