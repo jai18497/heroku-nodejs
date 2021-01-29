@@ -1,0 +1,9 @@
+{
+"development": {
+"host": "127.0.0.1:27017",
+"dbName": "Heroku-test"
+},
+"production": {
+"env-variable": "mongodb://127.0.0.1:27017"
+}
+}
