@@ -29,5 +29,5 @@ app.use((req, res, next) => {
     require("./mongo")().then(() => next());
     console.log("else (mongoose.connection.readyState)");
   }
-});
+#});
 
